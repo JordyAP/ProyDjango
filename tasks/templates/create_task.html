@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block content %}
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div><br>
+                    <h1 class="titulohome">Create task</h1>
+                    {{error}}
+                </div>
+                <div class="col-6">
+                    <form action="" method="POST">
+                        {% csrf_token %}
+                        <div>
+                            <label class="textdetail1" for="id_title">Title:</label>
+                            <input class="inputdetail1" type="text" name="title" maxlength="100" required="" id="id_title" placeholder="Write a title">
+                        </div><br>
+                        <div>
+                            <label class="textdetail2" for="id_description">Description:</label>
+                            <textarea class="inputdetail2" name="description" cols="40" rows="10" id="id_description" placeholder="Write a description"></textarea>
+                        </div><br>
+                        <div>
+                            <label class="textdetail1" for="id_important">Important:</label>
+                            <input class="inputdetail3" type="checkbox" name="important" id="id_important">
+                        </div>
+                        <button class="btn btn-success">Success</button>
+                    </form>
+                </div>
+            </div><br><br>
+        </div>
+        
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    </body>
+</html>
+
+{% endblock %}

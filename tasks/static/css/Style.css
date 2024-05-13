@@ -1,0 +1,225 @@
+/*NAVBAR*/
+.header{
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    background: rgb(15, 158, 177);
+    backdrop-filter: blur(0.4rem);
+    -webkit-backdrop-filter: blur(0.4rem);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    box-shadow: 0px 1px 7px;
+}
+
+.logo{
+    font-size: 32px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    transition: .3s;
+}
+
+.navbar a{
+    position: relative;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 500;
+    text-decoration: none;
+    margin-left: 35px;
+}
+
+.navbar a::before{
+    content: '';
+    position: absolute;
+    top: 105%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #000;
+    transition: .4s;
+}
+
+.navbar a:hover::before{
+    width: 100%;
+}
+
+/*HOME*/
+.wrapper .tituloformulario{
+    font-size: 35px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #0a7579;
+    text-shadow: 1px 1px 2px #1b1a1a;
+}
+
+.titulohome{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: #0f6f86;
+    text-shadow: 1px 1px 3px #1b1a1a;
+}
+
+.text1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 17px;
+    color: #000;
+}
+
+.imagen1{
+    box-shadow: 10px 10px 20px -6px rgba(0,0,0,0.67);
+    width: 100%;
+    height: auto;
+
+}
+
+/*FORMULARIOS*/
+
+
+.wrapper{
+    width: 95%;
+    background: transparent;
+    border: 2px solid rgba(46, 44, 44, 0.301);
+    backdrop-filter: blur(20px);
+    color: #000;
+    border-radius: 10px;
+    padding: 20px 15px;
+    box-shadow: -1px 0px 13px -4px rgba(0,0,0,0.75);
+}
+
+.wrapper .input-box{
+    width: 75%;
+    height: 50px;
+    margin: 25px 0;
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgb(20, 20, 20);
+    border-radius: 30px;
+    font-size: 16px;
+    color: #000;
+    padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder{
+    color: #000;
+}
+.input-box .bxs-user{
+    margin-left: 75%;
+    transform: translateY(-175%);
+    font-size: 20px;
+}
+.input-box .bxs-lock-alt{
+    margin-left: 75%;
+    transform: translateY(-175%);
+    font-size: 20px;
+}
+.wrapper .btn{
+    width: 50%;
+    height: 45px;
+    background: #9beff1;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16;
+    color: #222;
+    font-weight: 800;
+    box-shadow: 1px 1px 6px #0f6f86;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.wrapper .btn:hover{
+    background: #12aaaf;
+    box-shadow: 1px 2px 8px #0a7579;
+}
+
+/*TASK DETAILS*/
+.textdetail1{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.inputdetail1{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Tahoma, Geneva, Verdana, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    margin-left: 55px;
+    border-radius: 5px;
+    width: 60%;
+}
+.textdetail2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: 600;
+}
+.inputdetail2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Tahoma, Geneva, Verdana, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    border-radius: 5px;
+    width: 60%;
+}
+.inputdetail3{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, Tahoma, Geneva, Verdana, sans-serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 17px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+form .btn-success{
+    margin-top: 10px;
+}
+
+/*TABLES*/
+.tablatasks{
+    border: 1px solid black;
+    text-align: center;
+    width: 100%;
+    box-shadow: 0px 0px 1px;
+}
+th{
+    background: #81dbdf;
+}
+.filastasks{
+    border: 1px solid black;
+    font-family:Georgia, 'Times New Roman', Times, serif, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 7px;
+}
+.columnastasksimport{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.columnastasks{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.columnastasksdesc{
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.columnastasksuser{
+    border: 1px solid black;
+    padding: 10px;
+    font-family: 'Times New Roman', Times, serif;
+    font-style:oblique;
+    font-weight: 600;
+    font-size: 18px;
+}
