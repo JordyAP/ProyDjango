@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
+from .constants import EXTERNAL_URL
 import os
 import dj_database_url
 
@@ -85,10 +86,11 @@ WSGI_APPLICATION = 'django_portfolio.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgresql://postges:postgres@localhost/postgres',
+        default='postgres://proydjangocrud_user:UcV8KslpuZwPtfrztVfWNrARK4iEYXwL@dpg-cp0p5p021fec7388h8ug-a.oregon-postgres.render.com/proydjangocrud',
         conn_max_age=600
     )
 }
+EXTERNAL_DATABASE_URL = 'postgres://proydjangocrud_user:UcV8KslpuZwPtfrztVfWNrARK4iEYXwL@dpg-cp0p5p021fec7388h8ug-a.oregon-postgres.render.com/proydjangocrud'
 
 
 # Password validation
