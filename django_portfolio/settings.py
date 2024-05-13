@@ -83,18 +83,11 @@ WSGI_APPLICATION = 'django_portfolio.wsgi.application'
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'proydjangocrud',
-        'USER': 'proydjangocrud_user',
-        'PASSWORD': 'UcV8KslpuZwPtfrztVfWNrARK4iEYXwL',
-        'HOST': 'dpg-cp0p5p021fec7388h8ug-a',
-        'PORT': '5432',
-    }
+    'default': dj_database_url.config(
+        default='postgres://proydjangocrud_user:UcV8KslpuZwPtfrztVfWNrARK4iEYXwL@dpg-cp0p5p021fec7388h8ug-a.oregon-postgres.render.com/proydjangocrud',
+        conn_max_age=600
+    )
 }
-
-db_from_env = dj_database_url.config('postgres://proydjangocrud_user:UcV8KslpuZwPtfrztVfWNrARK4iEYXwL@dpg-cp0p5p021fec7388h8ug-a.oregon-postgres.render.com/proydjangocrud',conn_max_age=600)
-DATABASES['default'].update(db_from_env)
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
