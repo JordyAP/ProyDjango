@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY', default='your secret key')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = 'RENDER' not in os.environ
+DEBUG = True
 
 ALLOWED_HOSTS = []
 
@@ -85,7 +85,7 @@ WSGI_APPLICATION = 'django_portfolio.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgresql://postges:postgres@localhost/postgres',
+        default='postgres://proydjangocrud_user:UcV8KslpuZwPtfrztVfWNrARK4iEYXwL@dpg-cp0p5p021fec7388h8ug-a.oregon-postgres.render.com/proydjangocrud',
         conn_max_age=600
     )
 }
