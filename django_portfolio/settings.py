@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/5.0/ref/settings/
 """
 
 from pathlib import Path
-from .constants import EXTERNAL_URL
 import os
 import dj_database_url
 
@@ -90,8 +89,6 @@ DATABASES = {
         conn_max_age=600
     )
 }
-EXTERNAL_DATABASE_URL = 'postgres://proydjangocrud_user:UcV8KslpuZwPtfrztVfWNrARK4iEYXwL@dpg-cp0p5p021fec7388h8ug-a.oregon-postgres.render.com/proydjangocrud'
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
